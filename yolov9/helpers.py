@@ -77,17 +77,3 @@ def load_model(name, pretrained=True, channels=3, classes=80, autoshape=True, ve
         help_url = 'https://github.com/ultralytics/yolov5/issues/36'
         s = f'{e}. Cache may be out of date, try `force_reload=True` or see {help_url} for help.'
         raise Exception(s) from e
-
-
-if __name__ == "__main__":
-    import torch
-
-    # Load the model
-    model = load_model(
-        "gelan-c.pt", pretrained=True, channels=3, classes=80, autoshape=True, verbose=True, device="cpu")
-
-    # Load the image
-    img = r"data\zidane.jpg"
-
-    # Perform inference
-    results = model(img)
