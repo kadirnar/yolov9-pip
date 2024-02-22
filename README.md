@@ -2,9 +2,9 @@
 <h2>
      Yolov9-Pip: Packaged version of the Yolov9 repository
 </h2>
+<h4>
+     <img width="600" alt="teaser" src="docs\paper.png">
 </div>
-    <img width="600" alt="teaser" src="docs\paper.png">
-
 <p align="center">
 <a href="https://pypi.org/project/yolov9pip" target="_blank">
     <img src="https://img.shields.io/pypi/v/yolov9pip?color=%2334D058&label=pypi%20package" alt="Package version">
