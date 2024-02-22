@@ -51,4 +51,5 @@ setuptools.setup(
     url='https://github.com/kadirnar/yolov9-pip',
     install_requires=INSTALL_REQUIRES,
     packages=setuptools.find_packages(),
+    python_requires=">=3.8",
 )

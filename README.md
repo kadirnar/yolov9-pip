@@ -4,16 +4,10 @@
 </h2>
 <div>
     <img width="600" alt="teaser" src="docs\paper.png">
-</div>
-    <a href="https://pepy.tech/project/yolov9pip"><img src="https://pepy.tech/badge/yolov9pip" alt="downloads"></a>
-</div>
 
 <p align="center">
 <a href="https://pypi.org/project/yolov9pip" target="_blank">
     <img src="https://img.shields.io/pypi/v/yolov9pip?color=%2334D058&label=pypi%20package" alt="Package version">
-</a>
-<a href="https://pypi.org/project/yolov9pip" target="_blank">
-    <img src="https://img.shields.io/pypi/dm/yolov9pip?color=red" alt="Download Count">
 </a>
 <a href="https://pypi.org/project/yolov9pip" target="_blank">
     <img src="https://img.shields.io/pypi/pyversions/yolov9pip.svg?color=%2334D058" alt="Supported Python versions">
