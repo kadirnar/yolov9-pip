@@ -26,21 +26,24 @@
 </a>
 </p>
 
-This repo is a packaged version of the [Yolov7](https://github.com/WongKinYiu/yolov9) model.
+This repo is a packaged version of the [Yolov9](https://github.com/WongKinYiu/yolov9) model.
 
-### Installation
+### ⭐ Installation
 
 ```
 pip install yolov9pip
 ```
 
-### Yolov9 Inference
+### 🌠 Yolov9 Inference
 
 ```python
 import yolov9
 
 # load pretrained or custom model
-model = yolov9.load("yolov7.pt")
+model = yolov9.load(
+    "yolov9-c.pt",
+    device="cpu",
+)
 
 # set model parameters
 model.conf = 0.25  # NMS confidence threshold
@@ -66,7 +69,15 @@ categories = predictions[:, 5]
 results.show()
 ```
 
-### Citation
+## 😍 Contributing
+
+```bash
+pip install -r dev-requirements.txt
+pre-commit install
+pre-commit run --all-files
+```
+
+## 🤗 Citation
 
 ```bibtex
 @article{wang2024yolov9,
