@@ -2,7 +2,7 @@
 <h2>
      Yolov9-Pip: Packaged version of the Yolov9 repository
 </h2>
-<div>
+</div>
     <img width="600" alt="teaser" src="docs\paper.png">
 
 <p align="center">
