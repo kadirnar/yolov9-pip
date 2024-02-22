@@ -3,7 +3,7 @@
      Yolov9-Pip: Packaged version of the Yolov9 repository
 </h2>
 <div>
-    <img width="1000" alt="teaser" src="docs\paper.png">
+    <img width="600" alt="teaser" src="docs\paper.png">
 </div>
     <a href="https://pepy.tech/project/yolov9pip"><img src="https://pepy.tech/badge/yolov9pip" alt="downloads"></a>
 </div>
