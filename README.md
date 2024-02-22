@@ -1,6 +1,6 @@
 <div align="center">
 <h2>
-     MetaSeg: Packaged version of the Segment Anything repository
+     Yolov9-Pip: Packaged version of the Yolov9 repository
 </h2>
 <div>
     <img width="1000" alt="teaser" src="docs\paper.png">
@@ -31,7 +31,7 @@ This repo is a packaged version of the [Yolov7](https://github.com/WongKinYiu/yo
 ### Installation
 
 ```
-pip install yolov9
+pip install yolov9pip
 ```
 
 ### Yolov9 Inference
@@ -69,11 +69,11 @@ results.show()
 ### Citation
 
 ```bibtex
-@article{wang2022yolov7,
-  title={{YOLOv7}: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors},
-  author={Wang, Chien-Yao and Bochkovskiy, Alexey and Liao, Hong-Yuan Mark},
-  journal={arXiv preprint arXiv:2207.02696},
-  year={2022}
+@article{wang2024yolov9,
+  title={{YOLOv9}: Learning What You Want to Learn Using Programmable Gradient Information},
+  author={Wang, Chien-Yao  and Liao, Hong-Yuan Mark},
+  booktitle={arXiv preprint arXiv:2402.13616},
+  year={2024}
 }
 ```
 
