@@ -142,7 +142,6 @@ class TaskAlignedAssigner(nn.Module):
             metrics: (b, max_num_obj, h*w).
             topk_mask: (b, max_num_obj, topk) or None
         """
-
         num_anchors = metrics.shape[-1]  # h*w
         # (b, max_num_obj, topk)
         topk_metrics, topk_idxs = torch.topk(metrics, self.topk, dim=-1, largest=largest)
@@ -167,7 +166,6 @@ class TaskAlignedAssigner(nn.Module):
             target_gt_idx: (b, h*w)
             fg_mask: (b, h*w)
         """
-
         # assigned target labels, (b, 1)
         batch_ind = torch.arange(end=self.bs, dtype=torch.int64, device=gt_labels.device)[..., None]
         target_gt_idx = target_gt_idx + batch_ind * self.n_max_boxes  # (b, h*w)
