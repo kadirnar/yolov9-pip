@@ -458,12 +458,13 @@ class WandbLogger():
 
     def log_training_progress(self, predn, path, names):
         """
-        Build evaluation Table. Uses reference from validation dataset table.
+        Build evaluation Table.
 
-        arguments:
-        predn (list): list of predictions in the native space in the format - [xmin, ymin, xmax, ymax, confidence, class]
-        path (str): local path of the current evaluation image
-        names (dict(int, str)): hash map that maps class ids to labels
+        Uses reference from validation dataset table.
+                arguments:
+                predn (list): list of predictions in the native space in the format - [xmin, ymin, xmax, ymax, confidence, class]
+                path (str): local path of the current evaluation image
+                names (dict(int, str)): hash map that maps class ids to labels
         """
         class_set = wandb.Classes([{'id': id, 'name': name} for id, name in names.items()])
         box_data = []
@@ -504,8 +505,9 @@ class WandbLogger():
 
     def val_one_image(self, pred, predn, path, names, im):
         """
-        Log validation data for one image. updates the result Table if validation dataset is uploaded and log
-        bbox media panel.
+        Log validation data for one image.
+
+        updates the result Table if validation dataset is uploaded and log bbox media panel.
 
         arguments:
         pred (list): list of scaled predictions in the format - [xmin, ymin, xmax, ymax, confidence, class]

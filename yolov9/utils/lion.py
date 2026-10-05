@@ -1,4 +1,5 @@
 """PyTorch implementation of the Lion optimizer."""
+
 import torch
 from torch.optim.optimizer import Optimizer
 
@@ -18,7 +19,6 @@ class Lion(Optimizer):
             running averages of gradient and its square (default: (0.9, 0.99))
           weight_decay (float, optional): weight decay coefficient (default: 0)
         """
-
         if not 0.0 <= lr:
             raise ValueError('Invalid learning rate: {}'.format(lr))
         if not 0.0 <= betas[0] < 1.0:
